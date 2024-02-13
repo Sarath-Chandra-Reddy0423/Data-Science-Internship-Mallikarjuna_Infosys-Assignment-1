@@ -1,0 +1,30 @@
+'''
+3) 
+Write a python programme to accept student number, name and marks in 3 subjects. Calculate toatl average . print the student result based on the below conditions.
+if avg>=75 result is Distinction
+if avg>=60 result is First Class
+if avg>=50 result is Second Class
+if avg>=35 result is Third Class
+otherwise result is Fail
+
+'''
+
+student number =int(input("Enter the Student number"))
+name = input("Enter the student name")
+subject1_marks=int(input("Enter the marks obtained in Mathematics : "))
+subject2_marks=int(input("Enter the marks obtained in Physics : "))
+subject3_marks=int(input("Enter the marks obtained in Chemistry : "))
+
+total = subject1_marks + subject2_marks + subject3_marks
+average =total/3
+print(average)
+if average  >= 75:
+    print("Result : Distinction")
+elif average >= 60:
+    print("Resukt : First Class")
+elif average >= 50:
+    print("Result : Second Class")
+elif average >= 35:
+    print("Result : Third Class")
+else:
+    print("Fail")
